@@ -16,8 +16,7 @@ def consolidate_cart(cart)
     if receipt_item_num
       receipt[receipt_item_num][:count] += 1
     else
-      receipt[receipt.length] = i
-      receipt[receipt.length - 1][:count] = 1
+      receipt[receipt.length] = i.merge(count: 1)
     end
   end
 end
