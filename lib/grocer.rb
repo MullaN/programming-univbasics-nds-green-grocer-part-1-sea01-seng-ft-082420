@@ -19,4 +19,5 @@ def consolidate_cart(cart)
       receipt[receipt.length] = i.merge(count: 1)
     end
   end
+  receipt
 end
